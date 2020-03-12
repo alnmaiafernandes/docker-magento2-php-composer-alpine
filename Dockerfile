@@ -1,4 +1,4 @@
-FROM php:7.3.15-fpm-alpine
+FROM php:7.2.28-fpm-alpine
 
 RUN apk upgrade --update
 
