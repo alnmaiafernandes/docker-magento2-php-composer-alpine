@@ -3,7 +3,7 @@ FROM php:7.3.15-fpm-alpine
 RUN apk upgrade --update
 
 # lib dependencies
-RUN apk add jpeg-dev libpng-dev freetype-dev libxslt-dev icu-dev libzip-dev
+RUN apk add git jpeg-dev libpng-dev freetype-dev libxslt-dev icu-dev libzip-dev
 
 # install extensions
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
